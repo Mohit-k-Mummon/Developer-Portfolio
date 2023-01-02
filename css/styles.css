@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+
+
+/******************
+     VARIABLES
+******************/
+:root {
+    /* Colors */
+    --Black:     #151515;
+    --Green:     #4ee1a0;
+    --Dark-Grey: #242424;
+    --Grey:      #d9d9d9;
+    --White:     #ffffff;
+}
+
+/******************
+     CSS Reset
+******************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--Black);
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    padding: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 2.2rem 3rem;
+    }
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/******************
+     ARTIFACTS
+******************/
+#rings-img {
+    position: absolute;
+    left: -34rem;
+    top: 12.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    #rings-img {
+        left: -26rem;
+        top: 9rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #rings-img {
+        left: -10rem;
+        top: 13rem;
+    }
+}
+
+
+
+
+/******************
+     NAV
+******************/
+.nav {
+    width: 15.4rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+
+
+.nav__name {
+    color: var(--White);
+    font-size: 2.4rem;
+    vertical-align: top;
+}
+
+.nav__social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/* Icons */
+#github-icon {
+    transform: scale(0.8);
+}
+
+#mentor-icon {
+    transform: scale(0.76);  
+}
+
+#linkedin-icon {
+    transform: scale(0.77);  
+    
+}
+
+#twitter-icon {
+    transform: scale(0.78);  
+}
+
+#github-icon:hover path,
+#mentor-icon:hover path,
+#linkedin-icon:hover path,
+#twitter-icon:hover path {
+    fill: var(--Green);
+}
+
+@media screen and (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 111rem;
+    }
+
+    .nav__name {
+        font-size: 3.2rem;
+    }
+
+    .nav__social-icons {
+        max-width: 19.249rem;
+        position: relative;
+        top: 0.3rem;
+    }
+
+    #github-icon {
+        transform: scale(1);
+    }
+
+    #mentor-icon {
+        transform: scale(1);  
+    }
+    
+    #linkedin-icon {
+        transform: scale(1);  
+        
+    }
+    
+    #twitter-icon {
+        transform: scale(1);  
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav__social-icons {
+        right: 2.5rem;
+    }
+}
+
+
+
+
+
+
