@@ -34,16 +34,10 @@ html {
 body {
     min-height: 100vh;
     line-height: 1.5;
-    padding: 1.6rem;
     -webkit-font-smoothing: antialiased;
-    position: relative;
+    overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
-    body {
-        padding: 2.2rem 3rem;
-    }
-}
 
 input, button, textarea, select {
     font: inherit;
@@ -58,6 +52,19 @@ a {
     display: inline-block;
 }
 
+.site-wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    padding: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+    .site-wrapper {
+        padding: 2.2rem 3rem;
+    }
+}
+
 /******************
      ARTIFACTS
 ******************/
@@ -67,10 +74,21 @@ a {
     top: 12.5rem;
 }
 
+#circle-img {
+    position: absolute;
+    right: -7rem;
+    top: 25.5rem;
+}
+
+
 @media screen and (min-width: 768px) {
     #rings-img {
         left: -26rem;
         top: 9rem;
+    }
+
+    #circle-img {
+        top: 46.5rem;
     }
 }
 
@@ -78,6 +96,10 @@ a {
     #rings-img {
         left: -10rem;
         top: 13rem;
+    }
+
+    #circle-img {
+        display: none;
     }
 }
 
