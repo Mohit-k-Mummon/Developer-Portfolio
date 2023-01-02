@@ -13,6 +13,14 @@
 		<!-- JavaScript -->
 		<script src="app.js" defer></script>
 
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
 		<title>Frontend Mentor | Single-page developer portfolio</title>
 	</head>
 	<body>
@@ -23,6 +31,7 @@
 			<div class="circle-container">
 				<img id="circle-img" src="assets/images/pattern-circle.svg" alt="circle" />
 			</div>
+
 			<nav class="nav">
 				<a class="nav__name" href="https://www.frontendmentor.io/profile/Mohit-k-Mummon">
 					mohitkumar
@@ -98,8 +107,52 @@
 							/>
 						</svg>
 					</a>
+					<div class="mohit-container">
+						<picture>
+							<source
+								media="(max-width: 767px)"
+								srcset="assets/images/Mohit-mobile.png"
+							/>
+							<source
+								media="(min-width: 768px) and (max-width: 1023px)"
+								srcset="assets/images/Mohit-tablet.png"
+							/>
+							<source
+								media="(min-width: 1024px)"
+								srcset="assets/images/Mohit-desktop.png"
+							/>
+							<img
+								id="mohit-img"
+								src="assets/images/Mohit-desktop.png"
+								alt="Mohit K Mummon"
+							/>
+						</picture>
+					</div>
 				</div>
 			</nav>
+			<section class="hero">
+				<h1 class="hero__heading">
+					Nice to meet you! I'm
+					<span id="span-3">Mohit&nbsp;Kumar.</span>
+				</h1>
+				<h1 class="hero__heading-tablet">
+					Nice to <br />
+					meet you! I'm <br />
+					<span id="span-3">Mohit&nbsp;Kumar.</span>
+				</h1>
+				<h1 class="hero__heading-desktop">
+					Nice to meet you! <br />
+					I'm
+					<span id="span-3">Mohit&nbsp;Kumar.</span>
+				</h1>
+				<p class="hero__tagline">
+					Based in SF bay area, I'm a front-end developer ready to make an impact on your
+					team.
+				</p>
+				<div class="hero__contact-me">
+					<a href="#">Contact Me</a>
+				</div>
+			</section>
 		</div>
 	</body>
 </html>
