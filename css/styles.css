@@ -31,7 +31,6 @@ html {
 body {
     min-height: 100vh;
     line-height: 1.5;
-    overflow: hidden;
 }
 
 
@@ -56,7 +55,7 @@ a {
 .site-wrapper {
     position: relative;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     padding: 1.6rem;
 }
 
@@ -82,6 +81,8 @@ a {
     top: 25.5rem;
     z-index: -2;
 }
+
+
 
 
 
@@ -395,3 +396,83 @@ a {
 
 
 
+
+
+
+/******************
+    Experience
+******************/
+.experience-container {
+    display: grid;
+    color: var(--White);
+    padding: 4rem 0;
+    border-top: 1px solid var(--White);
+    border-bottom: 1px solid var(--White);
+    row-gap: 1.8rem;
+    margin: 8rem auto 0;
+    max-width: 111rem;
+    position: relative;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill h1 {
+    font-size: 3.2rem;
+}
+
+.skill p {
+    font-size: 1.6rem;
+    color: var(--Grey);
+    font-weight: 400;
+}
+
+#rings-img-mid-page {
+    position: absolute;
+    bottom: -5rem;
+    right: -35rem;
+}
+
+@media screen and (min-width: 768px) {
+    .experience-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 4.5rem;
+        margin: 9rem auto 0;
+        padding: 4.5rem 0;
+        border-bottom: none;
+    }
+    
+    .skill {
+        text-align: left;
+    }
+
+    .skill h1 {
+        font-size: 4.8rem;
+    }
+
+    .skill p {
+        font-size: 1.8rem;
+        margin-top: 0.5rem;
+    }
+
+    #rings-img-mid-page {
+    bottom: 2rem;
+    right: -39rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .experience-container {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 25rem auto 0;
+        padding: 6.6rem 0;
+        row-gap: 5rem;
+        column-gap: 3.5rem;
+    }
+
+    #rings-img-mid-page {
+    bottom: 2rem;
+    right: -42rem;
+    }
+}
