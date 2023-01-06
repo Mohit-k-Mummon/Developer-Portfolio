@@ -15,12 +15,24 @@ const submitButton = document.getElementById('submit-btn');
 
 nameInput.addEventListener('input', event => {
 	let target = event.target.value;
+	console.log(target);
 
 	if (target.length > 0) {
 		nameInput.style.borderBottom = '1px solid #4ee1a0';
 		isValid = true;
 	} else {
 		nameInput.style.borderBottom = '1px solid red';
+		isValid = false;
+	}
+});
+
+emailInput.addEventListener('input', event => {
+	let target = event.target.value;
+	if (isEmail(target)) {
+		emailInput.style.borderBottom = '1px solid #4ee1a0';
+		isValid = true;
+	} else {
+		emailInput.style.borderBottom = '1px solid red';
 		isValid = false;
 	}
 });
