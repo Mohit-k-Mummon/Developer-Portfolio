@@ -43,7 +43,7 @@
 						href="https://www.frontendmentor.io/profile/Mohit-k-Mummon"
 					>
 						<svg
-							id="github-icon"
+							class="github-icon"
 							xmlns="http://www.w3.org/2000/svg"
 							width="25"
 							height="24"
@@ -61,7 +61,7 @@
 						href="https://www.frontendmentor.io/profile/Mohit-k-Mummon"
 					>
 						<svg
-							id="mentor-icon"
+							class="mentor-icon"
 							xmlns="http://www.w3.org/2000/svg"
 							width="26"
 							height="23"
@@ -78,7 +78,7 @@
 						href="https://www.frontendmentor.io/profile/Mohit-k-Mummon"
 					>
 						<svg
-							id="linkedin-icon"
+							class="linkedin-icon"
 							xmlns="http://www.w3.org/2000/svg"
 							width="25"
 							height="24"
@@ -96,7 +96,7 @@
 						href="https://www.frontendmentor.io/profile/Mohit-k-Mummon"
 					>
 						<svg
-							id="twitter-icon"
+							class="twitter-icon"
 							xmlns="http://www.w3.org/2000/svg"
 							width="24"
 							height="20"
@@ -133,17 +133,17 @@
 			<section class="hero container">
 				<h1 class="hero__heading">
 					Nice to meet you! I'm
-					<span id="span-3">Mohit&nbsp;Kumar.</span>
+					<span class="span">Mohit&nbsp;Kumar.</span>
 				</h1>
 				<h1 class="hero__heading-tablet">
 					Nice to <br />
 					meet you! I'm <br />
-					<span id="span-3">Mohit&nbsp;Kumar.</span>
+					<span class="span">Mohit&nbsp;Kumar.</span>
 				</h1>
 				<h1 class="hero__heading-desktop">
 					Nice to meet you! <br />
 					I'm
-					<span id="span-3">Mohit&nbsp;Kumar.</span>
+					<span class="span">Mohit&nbsp;Kumar.</span>
 				</h1>
 				<p class="hero__tagline">
 					Based in SF bay area, I'm a front-end developer ready to make an impact on your
@@ -215,10 +215,18 @@
 							</div>
 							<div class="buttons-container">
 								<div class="button">
-									<a href="#">View Project</a>
+									<a
+										href="https://design-portfolio-mk.netlify.app/"
+										target="_blank"
+										>View Project</a
+									>
 								</div>
 								<div class="button">
-									<a href="#">View Code</a>
+									<a
+										href="https://github.com/Mohit-k-Mummon/single-page-design-portfolio"
+										target="_blank"
+										>View Code</a
+									>
 								</div>
 							</div>
 						</div>
@@ -249,10 +257,16 @@
 							</div>
 							<div class="buttons-container">
 								<div class="button">
-									<a href="#">View Project</a>
+									<a href="https://food-order-mk.netlify.app/" target="_blank"
+										>View Project</a
+									>
 								</div>
 								<div class="button">
-									<a href="#">View Code</a>
+									<a
+										href="https://github.com/Mohit-k-Mummon/Food-Order-App-React"
+										target="_blank"
+										>View Code</a
+									>
 								</div>
 							</div>
 						</div>
@@ -284,17 +298,23 @@
 							</div>
 							<div class="buttons-container">
 								<div class="button">
-									<a href="#">View Project</a>
+									<a href="https://officelite-mk.netlify.app/" target="_blank"
+										>View Project</a
+									>
 								</div>
 								<div class="button">
-									<a href="#">View Code</a>
+									<a
+										href="https://github.com/Mohit-k-Mummon/officelite-coming-soon"
+										target="_blank"
+										>View Code</a
+									>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="projects__card">
 						<div class="projects__card-image">
-							<img src="assets/images/News Homepage.webp" alt="" />
+							<img src="assets/images/News-Homepage.webp" alt="" />
 							<div class="overlay">
 								<div class="button">
 									<a href="https://news-mk.netlify.app/" target="_blank"
@@ -319,17 +339,23 @@
 							</div>
 							<div class="buttons-container">
 								<div class="button">
-									<a href="#">View Project</a>
+									<a href="https://news-mk.netlify.app/" target="_blank"
+										>View Project</a
+									>
 								</div>
 								<div class="button">
-									<a href="#">View Code</a>
+									<a
+										href="https://github.com/Mohit-k-Mummon/news-homepage-main"
+										target="_blank"
+										>View Code</a
+									>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="projects__card">
 						<div class="projects__card-image">
-							<img src="assets/images/Interactive Card Details.webp" alt="" />
+							<img src="assets/images/Interactive-Card-Details.webp" alt="" />
 							<div class="overlay">
 								<div class="button">
 									<a href="https://creditform-mk.netlify.app/" target="_blank"
@@ -354,10 +380,16 @@
 							</div>
 							<div class="buttons-container">
 								<div class="button">
-									<a href="#">View Project</a>
+									<a href="https://creditform-mk.netlify.app/" target="_blank"
+										>View Project</a
+									>
 								</div>
 								<div class="button">
-									<a href="#">View Code</a>
+									<a
+										href="https://github.com/Mohit-k-Mummon/Interactive-card-details-form"
+										target="_blank"
+										>View Code</a
+									>
 								</div>
 							</div>
 						</div>
@@ -374,23 +406,44 @@
 						the the form, and I'll get back to you as soon as possible.
 					</p>
 				</header>
-				<form class="contact__form">
+				<form
+					id="form"
+					class="contact__form"
+					action="https://formsubmit.co/mxkumar@protonmail.com"
+					method="POST"
+				>
 					<div class="input">
-						<input type="text" placeholder="NAME" maxlength="255" />
+						<input
+							id="name-input"
+							type="text"
+							name="name"
+							placeholder="NAME"
+							maxlength="255"
+							required
+						/>
 					</div>
-					<div class="input">
-						<input type="email" placeholder="EMAIL" maxlength="255" />
+					<div id="email-input" class="input">
+						<input
+							type="email"
+							name="email"
+							placeholder="EMAIL"
+							maxlength="255"
+							required
+						/>
 					</div>
 					<div class="input">
 						<textarea
 							name="message"
-							id="email-message"
+							id="message-input"
 							placeholder="MESSAGE"
 							maxlength="500"
+							required
 						></textarea>
 					</div>
 					<div class="actions">
-						<button class="contact__form-button" type="submit">Send Message</button>
+						<button id="submit-btn" class="contact__form-button" type="submit">
+							Send Message
+						</button>
 					</div>
 				</form>
 			</section>
@@ -407,7 +460,7 @@
 						href="https://www.frontendmentor.io/profile/Mohit-k-Mummon"
 					>
 						<svg
-							id="github-icon"
+							class="github-icon"
 							xmlns="http://www.w3.org/2000/svg"
 							width="25"
 							height="24"
@@ -425,7 +478,7 @@
 						href="https://www.frontendmentor.io/profile/Mohit-k-Mummon"
 					>
 						<svg
-							id="mentor-icon"
+							class="mentor-icon"
 							xmlns="http://www.w3.org/2000/svg"
 							width="26"
 							height="23"
@@ -442,7 +495,7 @@
 						href="https://www.frontendmentor.io/profile/Mohit-k-Mummon"
 					>
 						<svg
-							id="linkedin-icon"
+							class="linkedin-icon"
 							xmlns="http://www.w3.org/2000/svg"
 							width="25"
 							height="24"
@@ -460,7 +513,7 @@
 						href="https://www.frontendmentor.io/profile/Mohit-k-Mummon"
 					>
 						<svg
-							id="twitter-icon"
+							class="twitter-icon"
 							xmlns="http://www.w3.org/2000/svg"
 							width="24"
 							height="20"

@@ -223,27 +223,27 @@ button {
 
 
 /* Icons */
-#github-icon {
+.github-icon {
     transform: scale(0.8);
 }
 
-#mentor-icon {
+.mentor-icon {
     transform: scale(0.76);
 }
 
-#linkedin-icon {
+.linkedin-icon {
     transform: scale(0.77);
 
 }
 
-#twitter-icon {
+.twitter-icon {
     transform: scale(0.78);
 }
 
-#github-icon:hover path,
-#mentor-icon:hover path,
-#linkedin-icon:hover path,
-#twitter-icon:hover path {
+.github-icon:hover path,
+.mentor-icon:hover path,
+.linkedin-icon:hover path,
+.twitter-icon:hover path {
     fill: var(--Green);
 }
 
@@ -276,20 +276,20 @@ button {
         top: 0.3rem;
     }
 
-    #github-icon {
+    .github-icon {
         transform: scale(1);
     }
 
-    #mentor-icon {
+    .mentor-icon {
         transform: scale(1);
     }
 
-    #linkedin-icon {
+    .linkedin-icon {
         transform: scale(1);
 
     }
 
-    #twitter-icon {
+    .twitter-icon {
         transform: scale(1);
     }
 }
@@ -347,11 +347,11 @@ button {
 }
 
 
-#span-3 {
+.span {
     position: relative;
 }
 
-#span-3::after {
+.span::after {
     content: '';
     background-color: var(--Green);
     height: 4px;
@@ -392,7 +392,7 @@ button {
         display: block;
     }
 
-    s #span-3::after {
+    .span::after {
         content: '';
         background-color: var(--Green);
         height: 6px;
@@ -428,7 +428,7 @@ button {
         display: none;
     }
 
-    #span-3::after {
+    .span::after {
         content: '';
         background-color: var(--Green);
         height: 6px;

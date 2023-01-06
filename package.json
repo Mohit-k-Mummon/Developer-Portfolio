@@ -1,0 +1,22 @@
+{
+  "name": "single-page-dev-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohit-k-Mummon/Developer-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohit-k-Mummon/Developer-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Mohit-k-Mummon/Developer-Portfolio#readme",
+  "description": "",
+  "dependencies": {
+    "parcel": "^2.8.2"
+  }
+}
