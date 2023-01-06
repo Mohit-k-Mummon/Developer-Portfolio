@@ -710,13 +710,17 @@ button {
     max-width: 44.5rem;
 
 }
+
+.contact__form .input {
+    border-bottom: 1px solid var(--White);
+}
+
 .contact__form input {
     width: 100%;
     background-color: transparent;
     color: var(--Grey);
     font-size: 1.6rem;
     border: none;
-    border-bottom: 1px solid var(--White);
     padding: 0.1rem 2.3rem 1.6rem;
     outline: none;
 }
@@ -727,7 +731,6 @@ button {
     color: var(--Grey);
     font-size: 1.6rem;
     border: none;
-    border-bottom: 1px solid var(--White);
     padding: 0.1rem 2.3rem 6rem;
     outline: none;
     resize: none;
