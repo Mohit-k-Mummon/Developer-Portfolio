@@ -221,6 +221,10 @@ button {
     width: 100%;
 }
 
+.icon-container.youtube {
+    height: 3rem;
+}
+
 
 /* Icons */
 .github-icon {
@@ -231,7 +235,7 @@ button {
     transform: scale(0.76);
 }
 
-.linkedin-icon {
+.youtube-icon {
     transform: scale(0.77);
 
 }
@@ -242,7 +246,7 @@ button {
 
 .github-icon:hover path,
 .mentor-icon:hover path,
-.linkedin-icon:hover path,
+.youtube-icon:hover path,
 .twitter-icon:hover path {
     fill: var(--Green);
 }
@@ -284,7 +288,7 @@ button {
         transform: scale(1);
     }
 
-    .linkedin-icon {
+    .youtube-icon {
         transform: scale(1);
 
     }
