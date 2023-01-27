@@ -555,8 +555,11 @@ button {
     transition: 0.3s linear;
 }
 
-.projects__card-image:hover>img {
-    transform: scale(1.03);
+@media (hover: hover) {
+    .projects__card-image:hover>img {
+        transform: scale(1.03);
+    }
+
 }
 
 .projects__card-image .overlay {
@@ -574,6 +577,10 @@ button {
     opacity: 0;
     transition: opacity 0.3s;
     cursor: pointer;
+}
+
+.projects__card-image .overlay .button {
+    display: none;
 }
 
 .projects__card-image .overlay:hover {
@@ -609,6 +616,10 @@ button {
 @media screen and (min-width: 1024px) {
     .projects__card-description .buttons-container {
         display: none;
+    }
+
+    .projects__card-image .overlay .button {
+        display: inline;
     }
 }
 
